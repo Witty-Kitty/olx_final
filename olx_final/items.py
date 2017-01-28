@@ -1,0 +1,20 @@
+from scrapy.item import Item, Field
+
+class OlxItem(Item):
+    summary = Field()
+    image = Field()
+    link = Field()
+    name = Field()
+    category = Field()
+    cost = Field()
+    cost_terms = Field()
+    created = Field()
+    location = Field()
+    desc = Field()
+    name2 = Field()
+    location2 = Field()
+    created2 = Field()
+    user_type = Field()
+    user = Field()
+    user_since = Field()
+    users_products_link = Field()
