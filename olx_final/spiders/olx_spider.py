@@ -8,7 +8,10 @@ import scrapy
 class MySpider(Spider):
     name = "olx"
     allowed_domains = ["olx.co.ke"]
-    start_urls = ["https://www.olx.co.ke/electronics-video/?page=%s" % page for page in xrange(1,100)]
+    start_urls = ["https://www.olx.co.ke/electronics-video/?page=%s" % page for page in xrange(1,1500)]
+    # start_urls = ["https://www.olx.co.ke/fashion-and-beauty/?page=%s" % page for page in xrange(1,100)]
+    # start_urls = ["https://www.olx.co.ke/real-estate/?page=%s" % page for page in xrange(1,100)]
+    # start_urls = ["https://www.olx.co.ke/vehicles/?page=%s" % page for page in xrange(1,100)]
     # start_urls = ["https://www.olx.co.ke/electronics-video/"]
 
     def parse(self, response):
